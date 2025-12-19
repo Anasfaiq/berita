@@ -1,7 +1,7 @@
 # Website Berita (HTML + Tailwind CSS)
 
 Project website berita sederhana yang dibuat pakai **HTML** dan **Tailwind CSS (CDN)**.  
-Fokus ke tampilan, layout, dan responsive design.
+Fokus ke tampilan, dan layout.
 
 ---
 
