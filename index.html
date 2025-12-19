@@ -6,7 +6,7 @@
     <title>Berita - Beranda</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen flex flex-col">
     <!-- container -->
     <div class="flex flex-col sticky top-0 z-50">
       <!-- navbar -->
@@ -665,7 +665,7 @@
       </div>
 
       <!-- kanan -->
-      <div class="w-[450px] shadow-lg rounded-xl h-fit p-4 flex flex-col gap-6 sticky top-32 z-50">
+      <div class="w-[450px] shadow-lg rounded-xl h-fit p-4 flex flex-col gap-6 sticky top-32 z-49">
         <div class="flex items-center gap-2">
           <img class="w-4 h-4" src="assets/rise.png" alt="">
           <p class="font-semibold text-sm">Trending Sekarang</p>
@@ -815,6 +815,109 @@
       </div>
 
     </div>
+
+    <footer class="bg-slate-900 text-slate-300 mt-32">
+      <div class="max-w-7xl mx-auto px-6 py-14">
+
+        <!-- TOP -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+          <!-- BRAND -->
+          <div>
+            <h2 class="text-white text-lg font-semibold mb-4">BERITA TERKINI</h2>
+            <p class="text-sm leading-relaxed mb-5">
+              Sumber berita terpercaya untuk informasi terkini dari dalam dan luar negeri.
+            </p>
+
+            <!-- SOSMED -->
+            <div class="flex gap-3">
+              <div class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-800 hover:bg-red-700 transition-colors cursor-pointer">
+                <img src="assets/facebook.png" class="w-4 h-4 invert">
+              </div>
+              <div class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-800 hover:bg-red-700 transition-colors cursor-pointer">
+                <img src="assets/twitter.png" class="w-4 h-4 invert">
+              </div>
+              <div class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-800 hover:bg-red-700 transition-colors cursor-pointer">
+                <img src="assets/instagram.png" class="w-4 h-4 invert">
+              </div>
+              <div class="w-9 h-9 flex items-center justify-center rounded-full bg-slate-800 hover:bg-red-700 transition-colors cursor-pointer">
+                <img src="assets/youtube.png" class="w-4 h-4 invert">
+              </div>
+            </div>
+          </div>
+
+          <!-- KATEGORI -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">Kategori</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Politik</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Bisnis</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Teknologi</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Olahraga</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Hiburan</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Gaya Hidup</li>
+            </ul>
+          </div>
+
+          <!-- PERUSAHAAN -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">Perusahaan</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Tentang Kami</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Kontak</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Karir</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Iklan</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Syarat & Ketentuan</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Kebijakan Privasi</li>
+            </ul>
+          </div>
+
+          <!-- LAINNYA -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">Lainnya</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="hover:text-red-600 transition-colors cursor-pointer">FAQ</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Panduan</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Sitemap</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Arsip</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">Newsletter</li>
+              <li class="hover:text-red-600 transition-colors cursor-pointer">RSS Feed</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border-t border-slate-700 my-10"></div>
+
+        <!-- NEWSLETTER -->
+        <div class="max-w-md">
+          <h3 class="text-white font-semibold mb-2">Dapatkan Newsletter</h3>
+          <p class="text-sm mb-4">
+            Berlangganan untuk mendapatkan berita terbaru langsung ke email Anda.
+          </p>
+          <div class="flex gap-2">
+            <input 
+              type="email"
+              placeholder="Email Anda"
+              class="flex-1 px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-sm focus:outline-none"
+            >
+            <button class="px-5 py-2 bg-red-600 text-white text-sm rounded-lg hover:bg-red-700 duration-200 transition-colors">
+              Subscribe
+            </button>
+          </div>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="border-t border-slate-700 my-10"></div>
+
+        <!-- BOTTOM -->
+        <div class="text-center text-sm text-slate-400">
+          © 2025 Berita Terkini. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+
 
   </body>
 </html>
