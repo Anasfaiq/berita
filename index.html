@@ -8,9 +8,9 @@
   </head>
   <body class="min-h-screen">
     <!-- container -->
-    <div class="flex flex-col">
+    <div class="flex flex-col sticky top-0 z-50">
       <!-- navbar -->
-      <div class="flex flex-col bg-gray-100 h-32 sticky top-0 z-50 shadow-md px-64">
+      <div class="flex flex-col bg-white h-32 sticky top-0 z-50 shadow-md px-64">
         <!-- top -->
         <div class="flex justify-between items-center py-4 border-b">
           <!-- left -->
@@ -19,13 +19,19 @@
             <p class="">Rabu, 17 Desember 2025</p>
           </div>
           <!-- right -->
-          <div>
+          <div class="relative w-64">
+            <img
+              src="assets/search-interface-symbol (1).png"
+              class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 opacity-60"
+              alt=""
+            >
             <input
               type="text"
               placeholder="Cari berita..."
-              class="border border-gray-300 rounded-md px-4 py-2"
-            />
+              class="w-full border border-gray-300 rounded-full pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
+            >
           </div>
+
         </div>
         <!-- bottom -->
         <div class="flex justify-between items-center py-2 border-b">
@@ -185,7 +191,7 @@
     <div class="flex gap-6 px-64 py-6">
 
       <!-- kiri -->
-      <div class="flex flex-col w-full gap-6">
+      <div class="flex flex-col w-[920px] gap-6">
 
         <!-- header -->
         <div class="flex justify-between items-center">
@@ -203,7 +209,7 @@
         <div class="grid grid-cols-4 gap-5">
 
           <!-- CARD -->
-          <div class="group flex flex-col h-96 border border-gray-300 rounded-lg overflow-hidden shadow-sm">
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
 
             <!-- image -->
             <div class="relative h-1/2 overflow-hidden">
@@ -238,7 +244,7 @@
           </div>
 
           <!-- CARD -->
-          <div class="group flex flex-col h-96 border border-gray-300 rounded-lg overflow-hidden shadow-sm">
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
 
             <!-- image -->
             <div class="relative h-1/2 overflow-hidden">
@@ -257,23 +263,23 @@
             <!-- content -->
             <div class="flex flex-col gap-2 p-4 h-1/2">
               <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
-                Smartphone Terbaru dengan Teknologi...
+                Aplikasi Baru Memudahkan...
               </p>
 
               <p class="text-sm text-gray-600">
-                Produsen smartphone ternama...
+                Platform edukasi teknologi meluncurkan...
               </p>
 
               <div class="flex gap-2 text-xs text-gray-500 mt-auto">
-                <p>Tech Reporter</p>
-                <p>17 Des 2025</p>
+                <p>Digital Team</p>
+                <p>16 Des 2025</p>
               </div>
             </div>
 
           </div>
 
           <!-- CARD -->
-          <div class="group flex flex-col h-96 border border-gray-300 rounded-lg overflow-hidden shadow-sm">
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
 
             <!-- image -->
             <div class="relative h-1/2 overflow-hidden">
@@ -292,23 +298,23 @@
             <!-- content -->
             <div class="flex flex-col gap-2 p-4 h-1/2">
               <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
-                Smartphone Terbaru dengan Teknologi...
+                Keamanan Cyber: Tips Melindungi...
               </p>
 
               <p class="text-sm text-gray-600">
-                Produsen smartphone ternama...
+                Ahli keamanan siber membagikan pandua...
               </p>
 
               <div class="flex gap-2 text-xs text-gray-500 mt-auto">
-                <p>Tech Reporter</p>
-                <p>17 Des 2025</p>
+                <p>Security Expert</p>
+                <p>16 Des 2025</p>
               </div>
             </div>
 
           </div>
 
           <!-- CARD -->
-          <div class="group flex flex-col h-96 border border-gray-300 rounded-lg overflow-hidden shadow-sm">
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
 
             <!-- image -->
             <div class="relative h-1/2 overflow-hidden">
@@ -327,30 +333,485 @@
             <!-- content -->
             <div class="flex flex-col gap-2 p-4 h-1/2">
               <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
-                Smartphone Terbaru dengan Teknologi...
+                Startup Lokal Raih Pendanaan Jutaan...
               </p>
 
               <p class="text-sm text-gray-600">
-                Produsen smartphone ternama...
+                Perusahaan rintisan teknologi Indonesia...
               </p>
 
               <div class="flex gap-2 text-xs text-gray-500 mt-auto">
-                <p>Tech Reporter</p>
+                <p>Business Desk</p>
+                <p>15 Des 2025</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- header -->
+        <div class="flex justify-between items-center">
+          <p class="text-lg font-semibold">Politik</p>
+
+          <div class="flex items-center gap-2">
+            <a href="#" class="text-red-500 hover:text-red-600">
+              Lihat Semua
+            </a>
+            <img class="w-3 h-3" src="assets/greater-than-symbol.png" alt="">
+          </div>
+        </div>
+
+        <!-- card list -->
+        <div class="grid grid-cols-4 gap-5">
+
+          <!-- CARD -->
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+
+            <!-- image -->
+            <div class="relative h-1/2 overflow-hidden">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out
+                group-hover:scale-110
+                bg-[url('https://images.unsplash.com/photo-1604793969109-ac60233bcc82')]">
+              </div>
+
+              <!-- badge -->
+              <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-3 py-1 rounded">
+                Politik
+              </span>
+            </div>
+
+            <!-- content -->
+            <div class="flex flex-col gap-2 p-4 h-1/2">
+              <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
+                Kebijakan Baru Pemerintah untuk...
+              </p>
+
+              <p class="text-sm text-gray-600">
+                Pemerintah meluncurkan...
+              </p>
+
+              <div class="flex gap-2 text-xs text-gray-500 mt-auto">
+                <p>Politik Desk</p>
                 <p>17 Des 2025</p>
               </div>
             </div>
 
           </div>
 
-          <!-- DUPLIKASI CARD 3x -->
-          <!-- tinggal copy card di atas -->
+          <!-- CARD -->
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+
+            <!-- image -->
+            <div class="relative h-1/2 overflow-hidden">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out
+                group-hover:scale-110
+                bg-[url('https://images.unsplash.com/photo-1578894381163-e72c17f2d45f')]">
+              </div>
+
+              <!-- badge -->
+              <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-3 py-1 rounded">
+                Politik
+              </span>
+            </div>
+
+            <!-- content -->
+            <div class="flex flex-col gap-2 p-4 h-1/2">
+              <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
+                Pertemuan Tingkat Tinggi Membahas...
+              </p>
+
+              <p class="text-sm text-gray-600">
+                Para pemimpin dunia berkumpul untuk...
+              </p>
+
+              <div class="flex gap-2 text-xs text-gray-500 mt-auto">
+                <p>International</p>
+                <p>17 Des 2025</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CARD -->
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+
+            <!-- image -->
+            <div class="relative h-1/2 overflow-hidden">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out
+                group-hover:scale-110
+                bg-[url('https://images.unsplash.com/photo-1604793969109-ac60233bcc82')]">
+              </div>
+
+              <!-- badge -->
+              <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-3 py-1 rounded">
+                Politik
+              </span>
+            </div>
+
+            <!-- content -->
+            <div class="flex flex-col gap-2 p-4 h-1/2">
+              <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
+                Reformasi Pendidikan: Program...
+              </p>
+
+              <p class="text-sm text-gray-600">
+                Kementrian pendidikan...
+              </p>
+
+              <div class="flex gap-2 text-xs text-gray-500 mt-auto">
+                <p>Redaksi</p>
+                <p>16 Des 2025</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CARD -->
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+
+            <!-- image -->
+            <div class="relative h-1/2 overflow-hidden">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out
+                group-hover:scale-110
+                bg-[url('https://images.unsplash.com/photo-1585829365295-ab7cd400c167')]">
+              </div>
+
+              <!-- badge -->
+              <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-3 py-1 rounded">
+                Politik
+              </span>
+            </div>
+
+            <!-- content -->
+            <div class="flex flex-col gap-2 p-4 h-1/2">
+              <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
+                Infrastruktur: Proyek Jalan Tol Baru Akan...
+              </p>
+
+              <p class="text-sm text-gray-600">
+                Pembangunan jalan tol yang menghubungkan...
+              </p>
+
+              <div class="flex gap-2 text-xs text-gray-500 mt-auto">
+                <p>Infrastructure Team</p>
+                <p>16 Des 2025</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- header -->
+        <div class="flex justify-between items-center">
+          <p class="text-lg font-semibold">Olahraga</p>
+
+          <div class="flex items-center gap-2">
+            <a href="#" class="text-red-500 hover:text-red-600">
+              Lihat Semua
+            </a>
+            <img class="w-3 h-3" src="assets/greater-than-symbol.png" alt="">
+          </div>
+        </div>
+
+        <!-- card list -->
+        <div class="grid grid-cols-4 gap-5">
+
+          <!-- CARD -->
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+
+            <!-- image -->
+            <div class="relative h-1/2 overflow-hidden">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out
+                group-hover:scale-110
+                bg-[url('https://images.unsplash.com/photo-1565483276060-e6730c0cc6a1?...')]">
+              </div>
+
+              <!-- badge -->
+              <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-3 py-1 rounded">
+                Olahraga
+              </span>
+            </div>
+
+            <!-- content -->
+            <div class="flex flex-col gap-2 p-4 h-1/2">
+              <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
+                Liga Champions: Pertandingan...
+              </p>
+
+              <p class="text-sm text-gray-600">
+                Babak knockout Liga Champions...
+              </p>
+
+              <div class="flex gap-2 text-xs text-gray-500 mt-auto">
+                <p>Sports Desk</p>
+                <p>17 Des 2025</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CARD -->
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+
+            <!-- image -->
+            <div class="relative h-1/2 overflow-hidden">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out
+                group-hover:scale-110
+                bg-[url('https://images.unsplash.com/photo-1535914254981-b5012eebbd15?...')]">
+              </div>
+
+              <!-- badge -->
+              <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-3 py-1 rounded">
+                Olahraga
+              </span>
+            </div>
+
+            <!-- content -->
+            <div class="flex flex-col gap-2 p-4 h-1/2">
+              <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
+                Atlet Nasional Pecahkan Rekor di...
+              </p>
+
+              <p class="text-sm text-gray-600">
+                Prestasi gemilang ditorehkan atlet...
+              </p>
+
+              <div class="flex gap-2 text-xs text-gray-500 mt-auto">
+                <p>National Sports</p>
+                <p>17 Des 2025</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CARD -->
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+
+            <!-- image -->
+            <div class="relative h-1/2 overflow-hidden">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out
+                group-hover:scale-110
+                bg-[url('https://images.unsplash.com/photo-1565483276060-e6730c0cc6a1?...')]">
+              </div>
+
+              <!-- badge -->
+              <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-3 py-1 rounded">
+                Olahraga
+              </span>
+            </div>
+
+            <!-- content -->
+            <div class="flex flex-col gap-2 p-4 h-1/2">
+              <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
+                Transfer Pemain: Bintang Sepakbola...
+              </p>
+
+              <p class="text-sm text-gray-600">
+                Bursa transfer mengejutkan dengan...
+              </p>
+
+              <div class="flex gap-2 text-xs text-gray-500 mt-auto">
+                <p>Football News</p>
+                <p>16 Des 2025</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CARD -->
+          <div class="group flex flex-col h-96 border border-gray-200 rounded-lg overflow-hidden shadow-sm">
+
+            <!-- image -->
+            <div class="relative h-1/2 overflow-hidden">
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out
+                group-hover:scale-110
+                bg-[url('https://images.unsplash.com/photo-1568952433726-3896e3881c65?...')]">
+              </div>
+
+              <!-- badge -->
+              <span class="absolute top-3 left-3 bg-red-600 text-white text-xs px-3 py-1 rounded">
+                Olahraga
+              </span>
+            </div>
+
+            <!-- content -->
+            <div class="flex flex-col gap-2 p-4 h-1/2">
+              <p class="font-medium group-hover:text-red-600 duration-200 cursor-pointer">
+                Turnamen Esports: Hadiah Miliaran...
+              </p>
+
+              <p class="text-sm text-gray-600">
+                Kompetisi Esports terbesar tahun ini...
+              </p>
+
+              <div class="flex gap-2 text-xs text-gray-500 mt-auto">
+                <p>Esports Team</p>
+                <p>15 Des 2025</p>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
       </div>
 
-      <!-- kanan (kosong dulu) -->
-      <div class="w-80">
-        <!-- nanti isi sidebar -->
+      <!-- kanan -->
+      <div class="w-[450px] shadow-lg rounded-xl h-fit p-4 flex flex-col gap-6 sticky top-32 z-50">
+        <div class="flex items-center gap-2">
+          <img class="w-4 h-4" src="assets/rise.png" alt="">
+          <p class="font-semibold text-sm">Trending Sekarang</p>
+        </div>
+
+
+        <div class="group flex gap-3 items-start">
+          <!-- nomor -->
+          <div class="min-w-[28px] h-7 flex items-center justify-center bg-gray-100 text-gray-700 text-sm font-semibold rounded-full group-hover:bg-red-600 group-hover:text-white duration-200 transition-colors">1</div>
+
+          <!-- konten -->
+          <div class="flex flex-col gap-1">
+            <p class="text-sm font-medium leading-snug group-hover:text-red-600 cursor-pointer duration-200 transition-colors">
+              Perkembangan AI Terbaru Mengubah Industri Global
+            </p>
+
+            <div class="flex items-center gap-2 text-xs text-gray-500">
+              <span class="bg-gray-100 px-2 py-0.5 rounded-md">
+                Teknologi
+              </span>
+              <span>•</span>
+              <span>125K views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group flex gap-3 items-start">
+          <!-- nomor -->
+          <div class="min-w-[28px] h-7 flex items-center justify-center bg-gray-100 text-gray-700 text-sm font-semibold rounded-full group-hover:bg-red-600 group-hover:text-white duration-200 transition-colors">2</div>
+
+          <!-- konten -->
+          <div class="flex flex-col gap-1">
+            <p class="text-sm font-medium leading-snug group-hover:text-red-600 cursor-pointer duration-200 transition-colors">
+              Pasar Saham Mencatat Rekor Tertinggi Kuartal Ini
+            </p>
+
+            <div class="flex items-center gap-2 text-xs text-gray-500">
+              <span class="bg-gray-100 px-2 py-0.5 rounded-md">
+                Bisnis
+              </span>
+              <span>•</span>
+              <span>98K views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group flex gap-3 items-start">
+          <!-- nomor -->
+          <div class="min-w-[28px] h-7 flex items-center justify-center bg-gray-100 text-gray-700 text-sm font-semibold rounded-full group-hover:bg-red-600 group-hover:text-white duration-200 transition-colors">3</div>
+
+          <!-- konten -->
+          <div class="flex flex-col gap-1">
+            <p class="text-sm font-medium leading-snug group-hover:text-red-600 cursor-pointer duration-200 transition-colors">
+              Tim Nasional Raih Medali Emas di Kejuaraan Dunia
+            </p>
+
+            <div class="flex items-center gap-2 text-xs text-gray-500">
+              <span class="bg-gray-100 px-2 py-0.5 rounded-md">
+                Olahraga
+              </span>
+              <span>•</span>
+              <span>67K views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group flex gap-3 items-start">
+          <!-- nomor -->
+          <div class="min-w-[28px] h-7 flex items-center justify-center bg-gray-100 text-gray-700 text-sm font-semibold rounded-full group-hover:bg-red-600 group-hover:text-white duration-200 transition-colors">4</div>
+
+          <!-- konten -->
+          <div class="flex flex-col gap-1">
+            <p class="text-sm font-medium leading-snug group-hover:text-red-600 cursor-pointer duration-200 transition-colors">
+              Festival Musik Terbesar Tahun Ini Siap Digelar
+            </p>
+
+            <div class="flex items-center gap-2 text-xs text-gray-500">
+              <span class="bg-gray-100 px-2 py-0.5 rounded-md">
+                Hiburan
+              </span>
+              <span>•</span>
+              <span>76K views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group flex gap-3 items-start">
+          <!-- nomor -->
+          <div class="min-w-[28px] h-7 flex items-center justify-center bg-gray-100 text-gray-700 text-sm font-semibold rounded-full group-hover:bg-red-600 group-hover:text-white duration-200 transition-colors">5</div>
+
+          <!-- konten -->
+          <div class="flex flex-col gap-1">
+            <p class="text-sm font-medium leading-snug group-hover:text-red-600 cursor-pointer duration-200 transition-colors">
+              Tips Hidup Sehat di Era Modern yang Sibuk
+            </p>
+
+            <div class="flex items-center gap-2 text-xs text-gray-500">
+              <span class="bg-gray-100 px-2 py-0.5 rounded-md">
+                Kesehatan
+              </span>
+              <span>•</span>
+              <span>65K views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group flex gap-3 items-start">
+          <!-- nomor -->
+          <div class="min-w-[28px] h-7 flex items-center justify-center bg-gray-100 text-gray-700 text-sm font-semibold rounded-full group-hover:bg-red-600 group-hover:text-white duration-200 transition-colors">6</div>
+
+          <!-- konten -->
+          <div class="flex flex-col gap-1">
+            <p class="text-sm font-medium leading-snug group-hover:text-red-600 cursor-pointer duration-200 transition-colors">
+              Kebijakan Baru Pemerintah untuk Ekonomi Digital
+            </p>
+
+            <div class="flex items-center gap-2 text-xs text-gray-500">
+              <span class="bg-gray-100 px-2 py-0.5 rounded-md">
+                Politik
+              </span>
+              <span>•</span>
+              <span>54K views</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group flex gap-3 items-start">
+          <!-- nomor -->
+          <div class="min-w-[28px] h-7 flex items-center justify-center bg-gray-100 text-gray-700 text-sm font-semibold rounded-full group-hover:bg-red-600 group-hover:text-white duration-200 transition-colors">7</div>
+
+          <!-- konten -->
+          <div class="flex flex-col gap-1">
+            <p class="text-sm font-medium leading-snug group-hover:text-red-600 cursor-pointer duration-200 transition-colors">
+              Destinasi Wisata Tersembunyi yang Wajib Dikunjungi
+            </p>
+
+            <div class="flex items-center gap-2 text-xs text-gray-500">
+              <span class="bg-gray-100 px-2 py-0.5 rounded-md">
+                Travel
+              </span>
+              <span>•</span>
+              <span>43K views</span>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
